@@ -1,0 +1,11 @@
+Model Information:
+* title:	Emperor Menelik of Ethiopia
+* source:	https://sketchfab.com/3d-models/emperor-menelik-of-ethiopia-7f1d54edb66b445c8ba17aeffe083920
+* author:	BlenderBurbax (https://sketchfab.com/Burbax)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Emperor Menelik of Ethiopia" (https://sketchfab.com/3d-models/emperor-menelik-of-ethiopia-7f1d54edb66b445c8ba17aeffe083920) by BlenderBurbax (https://sketchfab.com/Burbax) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

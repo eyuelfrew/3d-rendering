@@ -1,6 +1,6 @@
 import "./App.css";
 import * as THREE from "three";
-import gltfPath from "/models/dino/scene.gltf";
+import gltfPath from "/models/emperor_menelik_of_ethiopia/scene.gltf";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import WebGL from "three/addons/capabilities/WebGL.js";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
@@ -19,11 +19,11 @@ function App() {
     let mouseX = window.innerWidth / 2;
     let mouseY = window.innerHeight / 2;
     let object;
-    let objToRender = "dino";
+    let objToRender = "emperor_menelik_of_ethiopia";
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
     containerRef.current.appendChild(renderer.domElement);
-    camera.position.z = 5;
+    camera.position.z = 1;
     let model;
     const loader = new GLTFLoader();
     loader.load(
@@ -39,23 +39,24 @@ function App() {
         console.log("Error Loading the model: ", error);
       }
     );
-    camera.position.z = objToRender === "dino" ? 20 : 1;
+    camera.position.z =
+      objToRender === "emperor_menelik_of_ethiopia" ? 20 : 500;
     const topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
     topLight.position.set(500, 500, 500); //top-left-ish
     topLight.castShadow = true;
     scene.add(topLight);
     const ambientLight = new THREE.AmbientLight(
       0x333333,
-      objToRender === "dino" ? 5 : 0
+      objToRender === "emperor_menelik_of_ethiopia" ? 5 : 0
     );
     scene.add(ambientLight);
-    if (objToRender === "dino") {
+    if (objToRender === "emperor_menelik_of_ethiopia") {
       new OrbitControls(camera, renderer.domElement);
     }
 
     function animate() {
       requestAnimationFrame(animate);
-      if (object && objToRender === "dino") {
+      if (object && objToRender === "emperor_menelik_of_ethiopia") {
         //I've played with the constants here until it looked good
         object.rotation.y = -3 + (mouseX / window.innerWidth) * 3;
         object.rotation.x = -1.2 + (mouseY * 2.5) / window.innerHeight;
